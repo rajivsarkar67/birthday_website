@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            padding-bottom: 0px;
+        }
+        body{
+            background: url("https://media3.giphy.com/media/lMameLIF8voLu8HxWV/200w.webp?cid=ecf05e47pb3lhng0i4quqomux70xjabyvpkdwmabyx2dc10i&rid=200w.webp&ct=g") repeat;
+            background-size:cover;
+        }
+        div{
+            color: white;
+            font-size: 3rem;
+            font-weight: bolder;
+            text-align: center;
+            font-family:'Lucida Handwriting';
+        }
+        .main{
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            /* border: 3px solid white; */
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="name"> Happy Birthday Kanchan !!!!!</div> 
+        <div class="gifts">🎇🎉🎈✨🎊🎁</div>
+    </div>
+</body>
+
+<script>
+    let giftsEl = document.querySelector(".gifts");
+    let nameEl = document.querySelector(".name");
+    setInterval(() => {
+        giftsEl.classList.toggle('hidden');
+    }, 400);
+
+    setInterval(() => {
+        nameEl.style.color = "orange";
+    }, 300);
+
+    setInterval(() => {
+        nameEl.style.color = "greenyellow";
+    }, 500);
+
+    setInterval(() => {
+        nameEl.style.color = "yellow";
+    }, 800);
+
+    setInterval(() => {
+        nameEl.style.color = "cyan";
+    }, 1100);
+
+    setInterval(() => {
+        nameEl.style.color = "ivory";
+    }, 1300);
+</script>
+</html>
